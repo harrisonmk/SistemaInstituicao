@@ -1,3 +1,3 @@
 # SistemaInstituicao
 
-Sistema Online no Heroku https://sistemainstituicao.herokuapp.com/
+Sistema Hospedado no Heroku https://sistemainstituicao.herokuapp.com/

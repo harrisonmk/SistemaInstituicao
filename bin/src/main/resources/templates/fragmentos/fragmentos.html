@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- importa  o css do bootstrap -->  
+        <link  href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+       
+ 
+
+    </head>
+    <body>
+
+        <!-- ***** HEADER ****** -->
+        <nav class="navbar navbar-inverse navbar-static-top" th:fragment="header">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+
+                        <span class="sr-only">toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                </div>   
+
+                <!-- logomarca | como nao tem imagem vai texto-->
+                <a class="navbar-brand" href="#">Pantanal - Aprendendo</a>
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Inicio</a></li> 
+                        <li><a href="/instituicoes/index">Instituições</a></li> 
+
+
+                    </ul>  
+
+                </div>
+
+            </div>  
+
+
+        </nav>
+
+        <!-- ***** FOOTER ****** -->
+        <div th:fragment="footer" style="text-align: center;">
+
+            &copy; 2020 Harrison Mitchell
+        </div>
+
+    </body>
+</html>

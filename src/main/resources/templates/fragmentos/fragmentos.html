@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- importa  o css do bootstrap -->  
+        <link  href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>  
+
+        <link rel="stylesheet" type="text/css" th:href="@{/css/estilo.css}" />
+
+
+    </head>
+    <body>
+
+        <!-- ***** HEADER ****** -->
+        <nav class="navbar navbar-inverse navbar-static-top" th:fragment="header">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+
+                        <span class="sr-only">toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                </div>   
+
+                <!-- logomarca | como nao tem imagem vai texto-->
+                <a class="navbar-brand" href="#">Pantanal - Aprendendo</a>
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Inicio</a></li> 
+                        <li><a href="/instituicoes/index">Instituições</a></li> 
+                        <li><a href="/alunos/index">Alunos</a></li> 
+
+
+                    </ul>  
+
+                </div>
+
+            </div>  
+
+
+        </nav>
+
+        <!-- ***** FOOTER ****** -->
+     <footer style="position: absolute;bottom: 0;width: 100%"  th:fragment="footer">
+
+
+            <div style="background-color: graytext;text-align: center; height: 60px; padding: 50px">  &copy; 2020 Harrison Mitchell </div>
+
+        </footer>    
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+              
+       <link  href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>   
+       
+      
+              
+    </head>
+    <body>
+        <!--chama meu fragmento header que esta dentro do arquivo fragmentos.html que esta dentro da pasta fragmentos -->
+        <div th:replace="fragmentos/fragmentos::header"></div>
+       
+        
+        
+        
+        
+        
+
+        
+        
+         <!--chama meu fragmento footer que esta dentro do arquivo fragmentos.html que esta dentro da pasta fragmentos -->
+         <div th:replace="fragmentos/fragmentos :: footer"></div>
+         
+
+          <script src="/webjars/jquery.com/3.4.1/jquery.min.js"></script>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    </body>
+</html>
